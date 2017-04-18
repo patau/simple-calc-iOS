@@ -50,13 +50,14 @@ class ViewController: UIViewController {
         var factValue = 1
         if UInt(arr[0]) == nil {
             resultField.text = "Invalid input provided"
+            arr = [""]
         } else {
             for num in 1...Int(arr[0])! {
                 factValue *= num
             }
             resultField.text = String(factValue)
+            arr = ["\(factValue)"]
         }
-        arr = ["\(factValue)"]
         index = 0
     }
 
