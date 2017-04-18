@@ -34,8 +34,8 @@ class ViewController: UIViewController {
             arr.append("")
             index += 2
         }
-        //Change resultField content
-        if resultField.text == "0" {
+        //Change resultField content depending on what's already inside
+        if resultField.text == "0" || resultField.text == "Invalid input provided" {
             resultField.text = ("\(buttonText)")
         } else {
             resultField.text?.append("\(buttonText)")
@@ -100,7 +100,6 @@ class ViewController: UIViewController {
         index = 0
         var strAppend: String = String("\(runningTotal)")
         if runningTotal != 0 {
-
             //If strAppend ends with .0, remove it
             if strAppend.hasSuffix(".0") {
                 let endIndex = strAppend.index(strAppend.endIndex, offsetBy: -2)
