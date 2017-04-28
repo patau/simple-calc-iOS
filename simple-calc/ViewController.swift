@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var resultField: UILabel!
+    var arrFromHis : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +97,8 @@ class ViewController: UIViewController {
         //This is probably actually really bad - this is here because of avg
         runningTotal /= Double(count)
         
+        store("\(resultField.text!)=\(runningTotal)")
+        
         arr = [""]
         index = 0
         var strAppend: String = String("\(runningTotal)")
@@ -124,5 +127,19 @@ class ViewController: UIViewController {
         index = 0
         resultField.text = "0"
     }
+    
+    func store(_ data: String) {
+        arrFromHis.append(data)
+        print(arrFromHis)
+    }
+    
+    override func prepare(for seque: UIStoryboardSegue, sender: Any?) {
+//        let arrFromCalc = arrFromHis
+        let historyVC = seque.destination as! HistoryViewController
+        historyVC.passedArr = arrFromHis
+    }
+
+    
+    
 }
 

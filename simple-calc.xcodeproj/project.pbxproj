@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF56C75B1EB3368F0047F90E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C75A1EB3368F0047F90E /* HistoryViewController.swift */; };
 		CFEAC04F1EA2FC93003883E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAC04E1EA2FC93003883E9 /* AppDelegate.swift */; };
 		CFEAC0511EA2FC93003883E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAC0501EA2FC93003883E9 /* ViewController.swift */; };
 		CFEAC0541EA2FC93003883E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEAC0521EA2FC93003883E9 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF56C75A1EB3368F0047F90E /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CFEAC04B1EA2FC93003883E9 /* simple-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEAC04E1EA2FC93003883E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFEAC0501EA2FC93003883E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				CFEAC04E1EA2FC93003883E9 /* AppDelegate.swift */,
 				CFEAC0501EA2FC93003883E9 /* ViewController.swift */,
+				CF56C75A1EB3368F0047F90E /* HistoryViewController.swift */,
 				CFEAC0521EA2FC93003883E9 /* Main.storyboard */,
 				CFEAC0581EA2FC93003883E9 /* Assets.xcassets */,
 				CFEAC05A1EA2FC93003883E9 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				CFEAC0511EA2FC93003883E9 /* ViewController.swift in Sources */,
 				CFEAC04F1EA2FC93003883E9 /* AppDelegate.swift in Sources */,
 				CFEAC0571EA2FC93003883E9 /* simple_calc.xcdatamodeld in Sources */,
+				CF56C75B1EB3368F0047F90E /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +524,7 @@
 				CFEAC0781EA2FC93003883E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFEAC0791EA2FC93003883E9 /* Build configuration list for PBXNativeTarget "simple-calcTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				CFEAC07B1EA2FC93003883E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFEAC07C1EA2FC93003883E9 /* Build configuration list for PBXNativeTarget "simple-calcUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				CFEAC07E1EA2FC93003883E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
